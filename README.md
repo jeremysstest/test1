@@ -23,9 +23,9 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](docs/images/aboutkde.png)
+[Link](url) and ![Image](src)
 ```
-
+![Image](docs/images/aboutkde.png)
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
