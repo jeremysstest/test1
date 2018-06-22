@@ -1,12 +1,17 @@
 pipeline {
     agent {
-        docker { image 'node:7-alpine' }
+        docker { image 'centos:7' }
     }
     stages {
-        stage('Test') {
+        stage('Update) {
             steps {
-                sh 'node --version'
+                sh 'yum -y update'
             }
         }
+		stage('Install python3') {
+			steps {
+				sh 'yum install python3'
+			}
+		}
     }
 }
