@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Update') {
             steps {
-                sh 'sudp yum -y update'
+                sh 'sudo yum -y update'
             }
         }
 		stage('Install python3') {
