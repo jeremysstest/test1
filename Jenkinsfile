@@ -3,7 +3,7 @@ pipeline {
         docker { image 'centos:7' }
     }
     stages {
-        stage('Update) {
+        stage('Update') {
             steps {
                 sh 'yum -y update'
             }
