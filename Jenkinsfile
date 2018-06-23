@@ -11,6 +11,11 @@ pipeline {
                 sh 'yum -y update'
             }
         }
+		stage('Install EPEL-Release') {
+			steps {
+				sh 'yum -y install epel-release'
+			}
+		}
 		stage('Install python3') {
 			steps {
 				sh 'yum install python3'
