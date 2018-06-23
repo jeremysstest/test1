@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'yum -y update'
 				sh 'yum -y install epel-release'
-				sh 'yum install python35'
+				sh 'yum -y install python34'
 			}
 		}
     }
