@@ -1,16 +1,19 @@
 pipeline {
     agent {
-        docker { image 'centos:7' }
+        docker { 
+			image 'centos:7' 
+			args '-u root'
+		}
     }
     stages {
         stage('Update') {
             steps {
-                sh 'sudo yum -y update'
+                sh 'yum -y update'
             }
         }
 		stage('Install python3') {
 			steps {
-				sh 'sudo yum install python3'
+				sh 'yum install python3'
 			}
 		}
     }
