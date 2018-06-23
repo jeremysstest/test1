@@ -18,7 +18,7 @@ pipeline {
 		}
 		stage('Install python3') {
 			steps {
-				sh 'yum install python3'
+				sh 'yum install python35'
 			}
 		}
     }
